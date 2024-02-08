@@ -5,10 +5,18 @@ let verificar = document.getElementById('verificar')
 verificar.addEventListener('click', ()=>{
     let nome = document.getElementById('nome').value
     let idade = Number(document.getElementById('idade').value)
-    let título = Number(document.getElementById('título').value)
+    let titulo = Number(document.getElementById('título').value)
 
 
-    console.log(nome,idade,título)
+    console.log(nome,idade,titulo)
+
+    const cidadao = new Eleitor()
+
+    cidadao.nome = nome
+    cidadao.idade = idade
+    cidadao.titulo = titulo
+
+    console.log("instância do objeto: ",cidadao)
 
 
 })
